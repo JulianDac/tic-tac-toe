@@ -1,0 +1,88 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 7rem);
+  grid-template-rows: repeat(3, 7rem);
+  grid-gap: 2rem;
+  background-color: #333; /* Dark background */
+  padding: 1rem;
+  border-radius: 10px; /* Curvy edges */
+}
+
+.square {
+  background-color: #888; /* Grey color */
+  border: none;
+  border-radius: 10px; /* Curvy edges */
+  font-size: 3rem;
+  font-weight: bold;
+  color: #61dafb;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  width: 7rem;
+}
+
+/* Add a hover effect */
+.square:hover {
+  background-color: #aaa; /* Lighter grey on hover */
+}
+
+.reset-button {
+  margin-top: 3rem; /* Space it out from the board */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #61dafb;
+  color: rgb(62, 28, 90);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
